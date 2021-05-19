@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "4c918ee5-f8e1-43b8-a69c-403227c38a4d",
+		"name": "Coding_Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Telstra_test_Post_no_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/telstratest/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"telstratest",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teslstra_test_get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/telstratest/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"telstratest",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Telstra_test_post_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"payload\": {\r\n    \"name\": \"subscriber\",\r\n    \"valueType\": \"array\",\r\n    \"value\": [\r\n      {\r\n        \"name\": \"MN\",\r\n        \"valueType\": \"string\",\r\n        \"value\": \"{REF_MSISDN}\"\r\n      },\r\n      {\r\n        \"name\": \"IM\",\r\n        \"valueType\": \"string\",\r\n        \"value\": \"{REF_IMSI}\"\r\n      },\r\n      {\r\n        \"name\": \"NT\",\r\n        \"valueType\": \"string\",\r\n        \"value\": \"G\"\r\n      },\r\n      {\r\n        \"name\": \"privateUser\",\r\n        \"valueType\": \"array\",\r\n        \"value\": [\r\n          {\r\n            \"name\": \"privateUserId\",\r\n            \"valueType\": \"string\",\r\n            \"value\": \"{REF_IMSI}@ims.mnc001.mcc505.3gppnetwork.org\"\r\n          },\r\n          {\r\n            \"name\": \"roamingAllowed\",\r\n            \"valueType\": \"string\",\r\n            \"value\": \"false\"\r\n          },\r\n          {\r\n            \"name\": \"publicUser\",\r\n            \"valueType\": \"array\",\r\n            \"value\": [\r\n              {\r\n                \"name\": \"publicIdValue\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"sip:{REF_IMSI}@ims.mnc001.mcc505.3gppnetwork.org\"\r\n              },\r\n              {\r\n                \"name\": \"implicitRegSet\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n              },\r\n              {\r\n                \"name\": \"serviceProfileId\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"{REF_SERVPROFID}\"\r\n              },\r\n              {\r\n                \"name\": \"testUser\",\r\n                \"valueType\": \"array\",\r\n                \"value\": [\r\n                  {\r\n                    \"name\": \"testIdValue\",\r\n                    \"valueType\": \"string\",\r\n                    \"value\": \"sip:{REF_IMSI}@ims.mod-connect.com\"\r\n                  },\r\n                  {\r\n                    \"name\": \"implicitRegSet\",\r\n                    \"valueType\": \"string\",\r\n                    \"value\": \"2\"\r\n                  }\r\n                ]\r\n              }\r\n            ]\r\n          },\r\n          {\r\n            \"name\": \"userImsi\",\r\n            \"valueType\": \"string\",\r\n            \"value\": \"{REF_IMSI}\"\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"PO\",\r\n        \"valueType\": \"string\",\r\n        \"value\": \"0\"\r\n      }\r\n    ]\r\n  },\r\n  \"referenceData\": {\r\n    \"REF_MSISDN\": \"0406679321\",\r\n    \"REF_IMSI\": \"50002312344314\",\r\n    \"REF_SERVPROFID\": \"2\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/telstratest/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"telstratest",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
