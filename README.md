@@ -10,7 +10,7 @@
 
 ### raw body of json type.
 
-### app also checks for GET Request and empty POST
+### app also checks for GET Request and empty POST. I have also included a postman workspace file.
 
 ### I have also written a unit test to check the procedue to replace REF_* is working correctly. The Django Development server will not start unless the test case passed.
 
