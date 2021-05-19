@@ -1,0 +1,20 @@
+# version: '1.0'
+
+services:
+  testcase:
+    build: .
+    command: python -m unittest test
+    container_name: Telstra_test_testcase
+    volumes:
+      - .:/telstracodetest
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    container_name: Telstra_test
+    volumes:
+      - .:/telstracodetest
+    ports:
+      - "8000:8000"
+    depends_on:
+      testcase:
+        condition: service_completed_successfully
