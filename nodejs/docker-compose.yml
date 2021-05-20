@@ -1,0 +1,34 @@
+# version: '1.0'
+
+services:
+  buildnpm:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: nodejs
+    command: npm install
+    volumes:
+      - .:/telstratest
+  unittest:
+    build: .
+    command: npm test
+    volumes:
+      - .:/telstratest
+    depends_on:
+      buildnpm:
+        condition: service_completed_successfully
+  web:
+    build: .
+    command: npm start
+    container_name: Telstra_test
+    volumes:
+      - .:/telstratest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - unittest 
+      # buildnpm:
+      #   condition: service_completed_successfully
+       
+      # unittest:
+      #   condition: service_completed_successfully  

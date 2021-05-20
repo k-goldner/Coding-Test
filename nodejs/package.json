@@ -1,0 +1,19 @@
+{
+  "name": "telstra_coding_test_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Kent Goldner",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7"
+  }
+}
