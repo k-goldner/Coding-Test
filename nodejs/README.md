@@ -2,7 +2,7 @@
 ### 20/05/2021
 
 ### Navigate to the folder location
-### run docker-compose. (built with Docker Version 20.10.05 Build 55c4c88)
+### run docker-compose up. (built with Docker Version 20.10.05 Build 55c4c88)
 
 ### using postman send a POST request to http://127.0.0.1:3000/
 ### raw body of json type. 
