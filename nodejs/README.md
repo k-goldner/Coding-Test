@@ -6,7 +6,7 @@
 
 ### using postman send a POST request to http://127.0.0.1:3000/
 ### raw body of json type. 
-### app also checks for GET Request http://127.0.0.1:3000/ping and will receieve a Pong. Also attached are the postman Get and Request calls within an importable collection. 
+### app also checks for GET Request http://127.0.0.1:3000/ping and will receieve a Pong. Also attached are the postman GET and POST Request calls within an importable collection. 
 
 ### I have also written a unit test to check the function to replace REF_* is working correctly. The docker container will run the test, and will not launch the api application until the test passes. 
 ### this can be tested by modifying a record within the output_payload variable within /test/payload.test.js
